@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andre Pankratz"]
-  s.date = %q{2010-09-18}
+  s.date = %q{2010-09-23}
   s.description = %q{A collections of application helpers.}
   s.email = %q{andre@vidibus.com}
   s.extra_rdoc_files = [
@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
      "lib/vidibus/helpers.rb",
      "lib/vidibus/helpers/extensions.rb",
      "lib/vidibus/helpers/extensions/controller.rb",
-     "lib/vidibus/helpers/extensions/view.rb"
+     "lib/vidibus/helpers/extensions/view.rb",
+     "vidibus-helpers.gemspec"
   ]
   s.homepage = %q{http://github.com/vidibus/vidibus-helpers}
   s.rdoc_options = ["--charset=UTF-8"]
