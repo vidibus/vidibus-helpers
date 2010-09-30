@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{vidibus-helpers}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andre Pankratz"]
-  s.date = %q{2010-09-23}
+  s.date = %q{2010-09-30}
   s.description = %q{A collections of application helpers.}
   s.email = %q{andre@vidibus.com}
   s.extra_rdoc_files = [
@@ -19,6 +19,9 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     ".rspec",
+     "Gemfile",
+     "Gemfile.lock",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
@@ -28,6 +31,8 @@ Gem::Specification.new do |s|
      "lib/vidibus/helpers/extensions.rb",
      "lib/vidibus/helpers/extensions/controller.rb",
      "lib/vidibus/helpers/extensions/view.rb",
+     "spec/spec_helper.rb",
+     "spec/vidibus/helpers/extensions/view_spec.rb",
      "vidibus-helpers.gemspec"
   ]
   s.homepage = %q{http://github.com/vidibus/vidibus-helpers}
@@ -35,6 +40,10 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Helpers for Vidibus applications.}
+  s.test_files = [
+    "spec/spec_helper.rb",
+     "spec/vidibus/helpers/extensions/view_spec.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
