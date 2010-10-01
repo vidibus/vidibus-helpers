@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{vidibus-helpers}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andre Pankratz"]
-  s.date = %q{2010-09-30}
+  s.date = %q{2010-10-01}
   s.description = %q{A collections of application helpers.}
   s.email = %q{andre@vidibus.com}
   s.extra_rdoc_files = [
@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
      "lib/vidibus/helpers/extensions/controller.rb",
      "lib/vidibus/helpers/extensions/view.rb",
      "spec/spec_helper.rb",
-     "spec/vidibus/helpers/extensions/view_spec.rb",
+     "spec/vidibus/helpers/action_view_spec.rb",
      "vidibus-helpers.gemspec"
   ]
   s.homepage = %q{http://github.com/vidibus/vidibus-helpers}
@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Helpers for Vidibus applications.}
   s.test_files = [
     "spec/spec_helper.rb",
-     "spec/vidibus/helpers/extensions/view_spec.rb"
+     "spec/vidibus/helpers/action_view_spec.rb"
   ]
 
   if s.respond_to? :specification_version then
@@ -50,9 +50,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<activesupport>, ["~> 3.0.0"])
     else
+      s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
     end
   else
+    s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
   end
 end
 
