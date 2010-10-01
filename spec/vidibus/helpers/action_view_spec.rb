@@ -1,10 +1,7 @@
 require "spec_helper"
+require "action_view"
 
-class ViewHelper
-  include Vidibus::Helpers::Extensions::View
-end
-
-describe ViewHelper do
+describe ActionView::Base do
   describe "#number_to_duration" do
     it "should return 00:24 for 24 seconds" do
       subject.number_to_duration(24).should eql("00:24")
