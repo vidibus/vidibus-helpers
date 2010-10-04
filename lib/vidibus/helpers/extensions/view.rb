@@ -28,7 +28,7 @@ module Vidibus
         #
         def number_to_duration(seconds, options = {})
           hours = options[:hours]
-          seconds = seconds.round
+          seconds = seconds.to_f.round
           hour = (seconds / 3600).floor unless hours == false
           min  = (seconds / 60).floor
           sec  = (seconds % 60).round

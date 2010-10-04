@@ -22,5 +22,9 @@ describe ActionView::Base do
     it "should return 60:54 for 3654 seconds if :hours option is false" do
       subject.number_to_duration(3654, :hours => false).should eql("60:54")
     end
+    
+    it "should accept string input" do
+      subject.number_to_duration("0.7").should eql("00:01")
+    end
   end
 end
