@@ -1,8 +1,8 @@
 source :rubygems
-gem "activesupport", "~> 3.0.0"
-gem "actionpack", "~> 3.0.0"
+gem "activesupport", "~> 3"
+gem "actionpack", "~> 3"
 
 group :development do
-  gem "rspec", "~> 2.0.0.beta.20"
-  gem "relevance-rcov"
+  gem "rspec", "~> 2"
+  gem "rcov"
 end
