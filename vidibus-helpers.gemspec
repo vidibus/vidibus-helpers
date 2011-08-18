@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{vidibus-helpers}
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andre Pankratz"]
-  s.date = %q{2010-12-08}
+  s.date = %q{2011-08-18}
   s.description = %q{A collections of application helpers.}
   s.email = %q{andre@vidibus.com}
   s.extra_rdoc_files = [
@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
-    "Gemfile.lock",
     "LICENSE",
     "README.rdoc",
     "Rakefile",
@@ -36,33 +35,28 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/vidibus/vidibus-helpers}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{Helpers for Vidibus applications.}
-  s.test_files = [
-    "spec/spec_helper.rb",
-    "spec/vidibus/helpers/action_view_spec.rb"
-  ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<activesupport>, ["~> 3.0.0"])
-      s.add_runtime_dependency(%q<actionpack>, ["~> 3.0.0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.0.0.beta.20"])
-      s.add_development_dependency(%q<relevance-rcov>, [">= 0"])
+      s.add_runtime_dependency(%q<activesupport>, ["~> 3"])
+      s.add_runtime_dependency(%q<actionpack>, ["~> 3"])
+      s.add_development_dependency(%q<rspec>, ["~> 2"])
+      s.add_development_dependency(%q<rcov>, [">= 0"])
     else
-      s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
-      s.add_dependency(%q<actionpack>, ["~> 3.0.0"])
-      s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.20"])
-      s.add_dependency(%q<relevance-rcov>, [">= 0"])
+      s.add_dependency(%q<activesupport>, ["~> 3"])
+      s.add_dependency(%q<actionpack>, ["~> 3"])
+      s.add_dependency(%q<rspec>, ["~> 2"])
+      s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
-    s.add_dependency(%q<actionpack>, ["~> 3.0.0"])
-    s.add_dependency(%q<rspec>, ["~> 2.0.0.beta.20"])
-    s.add_dependency(%q<relevance-rcov>, [">= 0"])
+    s.add_dependency(%q<activesupport>, ["~> 3"])
+    s.add_dependency(%q<actionpack>, ["~> 3"])
+    s.add_dependency(%q<rspec>, ["~> 2"])
+    s.add_dependency(%q<rcov>, [">= 0"])
   end
 end
 
