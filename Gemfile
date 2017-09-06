@@ -1,6 +1,6 @@
 source :rubygems
-gem "activesupport", "~> 3"
-gem "actionpack", "~> 3"
+gem "activesupport", ">= 3"
+gem "actionpack", ">= 3"
 
 group :development do
   gem "rspec", "~> 2"
